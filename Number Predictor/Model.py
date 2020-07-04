@@ -33,6 +33,7 @@ model.add(tf.keras.layers.Flatten())
 # Define the layers and nodes for the DNN
 model.add(tf.keras.layers.Dense(512, activation='relu'))
 model.add(tf.keras.layers.Dropout(rate=0.5)) 
+# Define the output layer
 model.add(tf.keras.layers.Dense(10, activation='softmax'))
 
 # Define the loss, optimizer and metrics for the model
